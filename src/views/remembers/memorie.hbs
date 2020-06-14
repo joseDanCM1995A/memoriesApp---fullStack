@@ -1,0 +1,21 @@
+
+<div class="cuadro1"> 
+      <img class="img1" src="{{memorie.pathPhoto}}" alt="">
+      <h2 class="title1">{{memorie.title}}</h2>   
+    <hr>
+    <div class="description1"> 
+        <p class="desc1">{{memorie.description}}</p>
+    </div>   
+    <div class="lugar1"> 
+        <p class="lug1">{{memorie.place}}</p>
+    </div>   
+    <div class="fecha1"> 
+       <strong> <p class="fec1">{{memoriedate}}</p></strong>
+    </div>
+        <a class="edit" href="/remembers/actions/edit/{{memorie._id}}"><i class="fa fa-edit"></i></a>
+
+   <form action="/remembers/memorieEdit/delete/{{memorie.id}}?_method=DELETE" method="POST">
+    <input type="hidden" name="_method" value="DELETE">
+    <button type="submit" class="btn btn-danger btn-sm"> <i class="fa fa-close"></i></button>
+   </form>
+</div>

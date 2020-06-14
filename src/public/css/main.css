@@ -1,0 +1,240 @@
+body {
+    background-image: url('/img/fondo.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    position: relative;
+}
+
+.fileImage {
+    background: #fff;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+}
+
+.cuadro {
+    margin: auto;
+    color: #000000;
+    background-image: url('/img/vintage.jpg');
+    background-size: cover;
+    border: 1px solid #000000;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 16rem;
+    height: 350px;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    box-shadow: 1px 1px 1px #636e72;
+}
+
+.cuadro1 {
+    margin: auto;
+    color: #000000;
+    background-image: url('/img/vintage.jpg');
+    background-size: cover;
+    border: 1px solid #000000;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 27rem;
+    height: 470px;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    box-shadow: 2px 2px 2px #636e72;
+}
+
+.cuadro:hover {
+    box-shadow: 5px 5px 5px #000000;
+}
+
+.cuadro1:hover {
+    box-shadow: 5px 5px 5px #000000;
+}
+
+.img {
+    background: #b2bec3;
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.img1 {
+    background: #b2bec3;
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.img:hover {
+    width: 165px;
+    height: 165px;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.img1:hover {
+    width: 215px;
+    height: 215px;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.title1 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+hr {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 70%;
+    color: #000000;
+}
+
+.description {
+    height: 45px;
+    font-size: 11px;
+    margin-top: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.description:hover {
+    font-weight: bold;
+    transition: font-weight 2s, transform 2s;
+}
+
+.description1 {
+    height: 60px;
+    font-size: 11px;
+    margin-top: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.description1:hover {
+    font-size: 15px;
+    font-weight: bold;
+    transition: font-weight 2s, transform 2s, linear;
+}
+
+.lugar .lug {
+    margin-bottom: 1px;
+}
+
+.fec {
+    margin-bottom: 5px;
+}
+
+.lugar1 .lug1 {
+    margin-bottom: 1px;
+}
+
+.fec1 {
+    margin-bottom: 5px;
+}
+
+.icon {
+    font-size: 20px;
+    color: darkblue;
+}
+
+.icon:hover {
+    font-size: 25px;
+    color: black;
+}
+
+.edit {
+    font-size: 30px;
+    color: royalblue;
+}
+
+.edit:hover {
+    font-size: 40px;
+    color: black;
+}
+
+.delet {
+    font-size: 20px;
+    color: red;
+    margin-left: 20px;
+}
+
+.delet:hover {
+    font-size: 25px;
+    color: red;
+}
+
+.imgRegister {
+    width: 30%;
+}
+
+
+/* footer */
+
+
+/*REDES SOCIALES - FOOTER*/
+
+footer .redessociales .lol {
+    color: white;
+    font-size: bold;
+}
+
+footer .redessociales {
+    background: black;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+footer .redessociales .contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+footer .redessociales a {
+    color: #fff;
+    text-align: center;
+    width: 100px;
+    display: block;
+    padding: 15px 0;
+    border-radius: 10px;
+    font-size: 30px;
+    margin: 0 20px;
+}
+
+footer .redessociales p {
+    color: #fff;
+    text-align: center;
+}
+
+footer .redessociales .fb:hover {
+    background: #3b5998;
+}
+
+footer .redessociales .inst:hover {
+    background: #e1306c;
+}
+
+footer .redessociales .lnk:hover {
+    background: #0077b5;
+}
+
+footer .redessociales .githubb:hover {
+    background: whitesmoke;
+    color: black;
+}
+
+footer .redessociales .whats:hover {
+    background: #00BB2D;
+    color: white;
+}

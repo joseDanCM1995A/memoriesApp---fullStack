@@ -1,0 +1,36 @@
+<div class="col-md-4 mx-auto">
+    <div class="card">
+        <div class="card-header text-center">
+            <h3>Nuevo recuerdo</h3>
+        </div>
+        {{!-- form --}}
+        <div class="card-body">
+            <form action="/remembers/new-memorie" method="POST" enctype="multipart/form-data"> 
+                <div class="form-group">
+                    <input type="text" name="title" class="form-control" placeholder="Titulo" value="{{title}}" autofocus >
+                </div>
+                <div class="form-group">
+                </label> <textarea id="textarea" name="description" class="form-control" placeholder="Descripción" minlength="5" maxlength="54">{{des}}</textarea>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="place" class="form-control" placeholder="Lugar" value="{{place}}" >
+                </div>
+
+                <div class="form-group">
+                    <input type="date" name="date" class="form-control" value="{{date}}">
+                </div>
+                 
+
+                <div class="form-group text-center">
+                    <input type="file" name="photo" accept="image/gif, image/png, image/jpeg, image/jpg, image/psd, image/svg" required>
+                </div> 
+
+                
+                <div class="form-group mt-3 text-center">     
+                    <button type="submit" class="btn btn-primary" > Agregar </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

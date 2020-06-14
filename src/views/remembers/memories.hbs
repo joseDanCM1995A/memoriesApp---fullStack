@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuerdos</title>
+</head>
+<body>
+
+<div class="contendor">
+    <div class="row">
+        {{#each memories as |mem| }}
+        <div class="cuadro animated fadeInLeft">
+            {{!-- {{#each this}} --}}
+            <a href="/remembers/actions/{{_id}}"> <img class="img" src="{{pathPhoto}}" alt=""></a>  
+            {{!-- {{/each}} --}}
+            {{!-- {{#each this}} --}}
+                <h2 class="title">{{title}}</h2>
+            {{!-- {{/each}} --}}
+            <hr>
+            {{!-- {{#each this}} --}}
+            <div class="description"> 
+                <p class="desc">{{description}}</p>
+            </div>   
+            {{!-- {{/each}}  --}}
+            {{!-- {{#each this}} --}}
+            <div class="lugar"> 
+                <p class="lug">{{place}}</p>
+            </div>   
+            <div class="fecha"> 
+            <strong> <p class="fec">{{date}}</p></strong>
+            </div>
+            {{!-- {{/each}} --}}
+               <a class="icon" href="/remembers/actions/{{_id}}"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+        </div>
+        {{else}}
+            <div class="card mx-auto">
+                <div class="card-body">
+                    <h1 class="text-center">¡Hola! <p>{{user.name}}</p></h1>
+                    <p class="lead text-center">No hay ningún recuerdo aún</p>
+                   <div class="text-center">
+                        <a href="/remembers/add" class="btn btn-primary ">Agregar Recuerdo</a>
+                   </div>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>
+
+<div class="text-center "> 
+    <a href="/remembers/add" class="btn btn-primary mt-5 ">Agregar</a>
+</div>
+
+
+
+</body>
+</html>

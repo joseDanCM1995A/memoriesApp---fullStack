@@ -1,0 +1,32 @@
+<div class="col-md-4 mx-auto">
+    <div class="card">
+        <div class="card-header text-center">
+            <h3>Editar '{{memorie.title}}'</h3>
+        </div>
+        {{!-- form --}}
+        <div class="card-body">
+            {{!-- en action se pone la dirección del .hbs pero se tiene que declarar la ruta --}}
+            <form action="/remembers/memorieEdit/edit/{{memorie._id}}?_method=PUT" method="POST">  
+                {{!-- se decpara un input de tipo hidden para que pase por el middleware override
+                y separa con las indicaciones del input que se trata de una petición PUT--}}
+                <input type="hidden" name="_method" value="PUT"> 
+                <div class="form-group">
+                    <input type="text" name="title" class="form-control" placeholder="Titulo" value="{{memorie.title}}" autofocus >
+                </div>
+                <div class="form-group">
+                </label> <textarea id="textarea" name="description" class="form-control" placeholder="Descripción" minlength="5" maxlength="54">{{memorie.description}}</textarea>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="place" class="form-control" placeholder="Lugar" value="{{memorie.place}}" >
+                </div>
+
+                <div class="form-group">
+                    <input type="date" name="date" class="form-control" value="{{memorie.date}}">
+                </div>
+                <div class="form-group mt-3 text-center">     
+                    <button type="submit" class="btn btn-primary" > Actualizar </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
